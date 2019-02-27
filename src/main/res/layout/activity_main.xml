@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.androidactivity.MainActivity">
+
+
+    <Button
+        android:text="restart"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:id="@+id/button"
+        android:layout_weight="0.02" />
+
+    <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal">
+    <!--//水平线性布局-->
+    <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score："/>
+    <!--Score文本-->
+    <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tvScore"/>
+    <!--得分文本-->
+    </LinearLayout>
+     <com.example.androidactivity.GameView android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/gameView">
+
+     </com.example.androidactivity.GameView>
+    <!--//网格布局,水平填充布局,控件比例为1-->
+</LinearLayout>
